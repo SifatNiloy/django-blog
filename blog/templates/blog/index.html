@@ -4,6 +4,7 @@
 {% block title %} My Blog {% endblock %} 
 
 {% block css_files%} 
+<link rel="stylesheet" href="{%static "blog/post.css" %}" />
 <link rel="stylesheet" href="{%static "blog/index.css" %}" />
 {% endblock %}
 {% block content %}
@@ -18,22 +19,12 @@
         <img src="{% static "blog/images/sifat.png" %}" alt="Sifat - The Author of this blog"></img>
         <h2>Sifat's Blog</h2>
     </header>
-    <p>Hi , I am Sifat. I love to blog about tech and science and the world! </p>
+    <p>Hi, I am Sifat. I love to blog about tech and science and the world! </p>
 </section>
 <section id="latest-posts">
     <h2>My Latest Thoughts</h2>
     <ul>
-        <li>
-            <article class="post">
-                <a href="">
-                    <img src="{% static "blog/images/mountains.jpg" %}" alt="Mountain Hiking"/>
-                    <div class="post__content">
-                    <h3>Mountain Hiking</h3>
-                    <p>There is nothing like the views you get when you hiking the mountains. And I wasn't even prepared what happened while I was enjoying the view. </p>
-                    </div>
-                </a>
-            </article>
-        </li>
+        {%include "blog/includes/post.html"%}
     </ul>
 <section>
 <section id="about">
