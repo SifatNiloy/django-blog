@@ -1,11 +1,38 @@
-{% extends 'base.html' %}
-
-{% block title %}
-    My Blog
-{% endblock %}
-
+{% extends 'base.html' %} 
+{% block title %} My Blog {% endblock %} 
 {% block content %}
-   <h1> Welcome to my blog </h1>
+<header id="main-navigation ">
+  <h1><a href="">Sifat's Blog</a></h1>
+  <nav>
+    <a href=""> </a>
+  </nav>
+</header>
+<section id="welcome">
+    <header>
+        <img src="" alt="Sifat - The Author of this blog"></img>
+        <h2>Sifat's Blog</h2>
+    </header>
+    <p>Hi , I am Sifat. I love to blog about tech and science and the world! </p>
+</section>
+<section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="">
+                    <img src="" alt="Mountain Hiking"/>
+                    <div class="post__content">
+                    <h3>Mountain Hiking</h3>
+                    <p>There is nothing like the views you get when you hiking the mountains. And I wasn't even prepared what happened while I was enjoying the view. </p>
+                    </div>
+                </a>
+            </article>
+        </li>
+    </ul>
+<section>
+<section id="about">
+    <h2>What I do</h2>
+    <p>I love programming. I love to help others and new technologies</p>
+    <p>My goal is to make the world a better place </p>
+<section>
 {% endblock %}
-
-
